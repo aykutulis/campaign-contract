@@ -18,7 +18,6 @@ contract Campaign {
     mapping(address => bool) public approvers;
     uint public approversCount;
 
-    // solhint-disable-next-line
     constructor(uint minimum, address creator) {
         manager = creator;
         minimumContribution = minimum;
